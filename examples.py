@@ -1,5 +1,6 @@
-from helper_functions import *
-from numerical_derivative_checker import check_derivative
+import numpy as np
+from numerical_derivative_checker import check_derivative, ScalarSampler, VectorSampler, MatrixSampler, \
+    PosDefMatrixSampler
 
 if __name__ == '__main__':
     # Scalar -> Scalar functions

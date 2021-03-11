@@ -1,4 +1,4 @@
-from helper_functions import *
+from numerical_derivative_checker.helper_functions import *
 from typing import Callable
 
 

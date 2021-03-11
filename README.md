@@ -25,6 +25,7 @@ Each sampling routine has various parameters such as minimum/maximum values or d
  
 Scalar input and output: f(x) = x**2
 ```
+from numerical_derivative_checker import check_derivative, ScalarSampler
 check_derivative(sampler=ScalarSampler(n_samples=200),
                  fun=lambda x: np.sin(x),
                  grad=lambda x: np.cos(x),
@@ -33,6 +34,7 @@ check_derivative(sampler=ScalarSampler(n_samples=200),
 
 Vector input and scalar output: f(x) = x^T A x
 ```
+from numerical_derivative_checker import check_derivative, VectorSampler
 A = np.random.rand(5, 5)
 check_derivative(sampler=VectorSampler(n=5),
                  fun=lambda x: x @ A @ x,
@@ -42,10 +44,11 @@ check_derivative(sampler=VectorSampler(n=5),
 
 Pos. def. matrix input and scalar output: f(X) = log(det(X))
 ```
+from numerical_derivative_checker import check_derivative, PosDefMatrixSampler
 check_derivative(sampler=PosDefMatrixSampler(n=3),
                  fun=lambda x: np.linalg.det(x),
                  grad=lambda x: np.linalg.det(x) * np.linalg.inv(x),
                  tol=1e-3)
 ```
 
-see ```main.py``` for more examples.
+see ```examples.py``` for more examples.
