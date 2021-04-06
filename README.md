@@ -51,4 +51,4 @@ check_derivative(sampler=PosDefMatrixSampler(n=3),
                  tol=1e-3)
 ```
 
-see ```examples.py``` for more examples.
+For additional examples, take a look at the [examples notebook](examples.ipynb).
