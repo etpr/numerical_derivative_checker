@@ -1,5 +1,5 @@
 # Numerical Derivative Checker
-This package contains a numericcal derivative checker that can be used to verify first or second order derivatives by 
+This package contains a numerical derivative checker that can be used to verify first or second order derivatives by 
 comparing them to the central finite difference approximation.
 
 The following combinations of input and output types are currently supported
